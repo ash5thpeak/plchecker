@@ -4,8 +4,38 @@
     ViewData["Title"] = "Home page";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+<div class="row mb-auto">
+    <div class="col-md-4">
+        <div class="row no-gutters border mb-4">
+            <div class="col p-4 mb-4 ">
+                <p class="card-text">
+                    A database of some of the UK's leading 'Over The Counter' (OTC).
+                    Some of the most well known brands have PL numbers which are the same as cheaper brands
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="row no-gutters border mb-4">
+            <div class="col p-4 d-flex flex-column position-static">
+                <p class="card-text mb-auto">
+                    <input type="text" id="txtDrug" name="Drug" placeholder="Search for a medicine" />
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="row no-gutters border mb-4">
+            <div class="col p-4 d-flex flex-column">
+                <p class="card-text mb-auto">
+                    You can download the completed project from GitHub.
+                </p>
+                <p>
+                </p>
+                <div>
+                    Your selected Drug: <b><span id="lblDrugName"></span></b>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
-

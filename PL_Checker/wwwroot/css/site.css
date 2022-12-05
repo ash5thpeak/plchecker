@@ -16,3 +16,8 @@ html {
 body {
   margin-bottom: 60px;
 }
+
+.ui-menu .ui-menu-item-wrapper {
+    padding: 0;
+    border: 0;
+}
