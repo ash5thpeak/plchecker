@@ -10,10 +10,12 @@ namespace PL_Checker.Data.Context
         }
 
         public DbSet<Medicine> Medicines { get; set; }
+        public DbSet<MedicineAttribution> MedicineAttributions { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.Entity<Medicine>().ToTable("Medicine");
+            modelBuilder.Entity<MedicineAttribution>().ToTable("MedicineAttribution");
         }
     }
 }
