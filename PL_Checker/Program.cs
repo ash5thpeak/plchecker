@@ -6,7 +6,11 @@ using PL_Checker.Data.SeedData;
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
-builder.Services.AddRazorPages();
+builder.Services.AddRazorPages(options =>
+{
+    //options.RootDirectory = "/Pages";
+    options.Conventions.AuthorizeFolder("/Pages/Admin"); ;
+});
 builder.Services.AddControllersWithViews();
 //builder.Services.AddAutoMapper(new[] { System.Reflection.Assembly.GetExecutingAssembly() }, ServiceLifetime.Scoped);
 
@@ -14,6 +18,7 @@ builder.Services.AddControllersWithViews();
 builder.Services.AddDbContext<PharmaDbContext>(options =>
 {
     options.UseInMemoryDatabase("PharmaDatabase");
+    //options.UseSqlServer(builder.Configuration.GetConnectionString("PharmaDbContext") ?? throw new InvalidOperationException("Connection string 'PharmaDbContext' not found.")));
 }, ServiceLifetime.Scoped);
 
 builder.Services.AddDatabaseDeveloperPageExceptionFilter();

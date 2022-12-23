@@ -9,8 +9,8 @@ namespace PL_Checker.Data.Context
         {
         }
 
-        public DbSet<Medicine> Medicines { get; set; }
-        public DbSet<MedicineAttribution> MedicineAttributions { get; set; }
+        public DbSet<Medicine>? Medicines { get; set; }
+        public DbSet<MedicineAttribution>? MedicineAttributions { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {

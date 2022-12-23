@@ -12,7 +12,10 @@ namespace PL_Checker.Models
         [Display(Name = "ID")]
         public int Id { get; set; }
 
+        [Display(Name ="Search Term")]
+        public string? SearchTerm { get; set; }
 
+        public int? Rating { get; set; }
     }
 }
 

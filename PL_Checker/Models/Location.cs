@@ -17,8 +17,10 @@ namespace PL_Checker.Models
         [DisplayFormat(NullDisplayText = "Location Name is required 1")]
         public string? Name { get; set; }
 
+        [StringLength(10)]
         public string? Latitude { get; set; }
 
+        [StringLength(10)]
         public string? Longitude { get; set; }
 
         [StringLength(12)]
@@ -27,7 +29,7 @@ namespace PL_Checker.Models
         [RegularExpression(@"^[A-Z]+[a-zA-Z0-9""'\s-]*$")]
         [StringLength(5)]
         [Required]
-        public string Rating { get; set; }
+        public string? Rating { get; set; }
     }
 }
 
