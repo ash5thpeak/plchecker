@@ -13,7 +13,7 @@ using var loggerFactory = LoggerFactory.Create(logging =>
     {
         options.ActivityTrackingOptions = ActivityTrackingOptions.SpanId
                                             | ActivityTrackingOptions.TraceId
-                                            | ActivityTrackingOptions.ParentId
+                     touc                       | ActivityTrackingOptions.ParentId
                                             | ActivityTrackingOptions.Baggage
                                             | ActivityTrackingOptions.Tags;
     })
