@@ -1,0 +1,22 @@
+﻿@page
+@model PL_Checker.Pages.AboutModel
+
+@{
+    ViewData["Title"] = "Medicine Statistics";
+}
+
+<h2>Medicine Statistics</h2>
+
+<table>
+    <tr>
+        <th>Medicine Names</th>
+        <th>Count</th>
+    </tr>
+    @foreach (var item in Model.MedicineGroups)
+        {
+            <tr>
+                <td>@Html.DisplayFor(modelItem => item.NameGroup)</td>
+                <td>@item.MedicineCount</td>
+            </tr>
+        }
+</table>

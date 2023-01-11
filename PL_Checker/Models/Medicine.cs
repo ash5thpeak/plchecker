@@ -18,16 +18,16 @@ namespace PL_Checker.Models
         [DisplayFormat(NullDisplayText = "Medicine Name is required 1")]
         public string? Name { get; set; }
 
-        [Display(Name = "Medicine ID")]
+        [Display(Name = "PL Number")]
         [StringLength(20)]
         public string? PL_Number { get; set; }
 
-        [Display(Name = "Medicine ID")]
+        [Display(Name = "Image URL")]
         [StringLength(255)]
         public string? ImageUrl { get; set; }
 
         // Foreign Key: ICollection - EFCore creates a HashSet
-        public ICollection<MedicineAttribution> MedicineAttributions { get; set; }
+        public ICollection<MedicineAttribution>? MedicineAttributions { get; set; }
     }
 }
 

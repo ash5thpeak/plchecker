@@ -24,6 +24,10 @@
     <None Remove="AutoMapper.Extensions.Microsoft.DependencyInjection" />
     <None Remove="Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore" />
     <None Remove="Microsoft.EntityFrameworkCore.Design" />
+    <None Remove="Data\Migrations\" />
+    <None Remove="Class\" />
+    <None Remove="Class\DataHandling\" />
+    <None Remove="Class\Logging\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Controllers\" />
@@ -31,6 +35,10 @@
     <Folder Include="Models\" />
     <Folder Include="Data\InitialData\" />
     <Folder Include="Pages\Medicines\" />
+    <Folder Include="Data\Migrations\" />
+    <Folder Include="Class\" />
+    <Folder Include="Class\DataHandling\" />
+    <Folder Include="Class\Logging\" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="6.0.11" />

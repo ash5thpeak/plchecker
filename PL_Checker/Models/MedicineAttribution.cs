@@ -11,6 +11,7 @@ namespace PL_Checker.Models
         public int Id { get; set; }
 
         [Display(Name = "Medicine ID")]
+        [Required]
         public int MedicineId { get; set; }
 
         [Display(Name = "Location ID")]
@@ -21,6 +22,10 @@ namespace PL_Checker.Models
         [DataType(DataType.Currency)]
         [Column(TypeName = "decimal(18, 2)")]
         public decimal Price { get; set; }
+
+        // Foreign Key: ICollection - EFCore creates a HashSet
+        public ICollection<Location>? Locations { get; set; }
+        public ICollection<Medicine>? Medicines { get; set; }
 
     }
 }

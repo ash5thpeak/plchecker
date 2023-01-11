@@ -29,29 +29,29 @@ namespace PL_Checker.Data.SeedData
                     new Medicine
                     {
                         //Id = 2,
-                        Name = "Anadin Extra",
-                        PL_Number = "PL12345/6789",
+                        Name = "Lloyds Paracetemol",
+                        PL_Number = "PL12149/3344",
                         ImageUrl = ""
                     },
                     new Medicine
                     {
                         //Id = 3,
-                        Name = "Anadin Extra",
-                        PL_Number = "PL12345/6789",
+                        Name = "Gaviscon",
+                        PL_Number = "PL39144/3298",
                         ImageUrl = ""
                     },
                     new Medicine
                     {
                         //Id = 4,
-                        Name = "Anadin Extra",
-                        PL_Number = "PL12345/6789",
+                        Name = "Andrews Antacid",
+                        PL_Number = "PL50321/3942",
                         ImageUrl = ""
                     },
                     new Medicine
                     {
                         //Id = 5,
                         Name = "Anadin Extra",
-                        PL_Number = "PL12345/6789",
+                        PL_Number = "PL55504/3256",
                         ImageUrl = ""
                     }
                 );

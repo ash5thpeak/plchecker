@@ -5,7 +5,7 @@ using System.Xml.Linq;
 
 namespace PL_Checker.Models
 {
-    public class SearchResults
+    public class SearchResult
     {
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
@@ -16,6 +16,11 @@ namespace PL_Checker.Models
         public string? SearchTerm { get; set; }
 
         public int? Rating { get; set; }
+
+        [DataType(DataType.Date)]
+        [Display(Name = "Search Date")]
+        [DisplayFormat(DataFormatString = "{0:yyyy-MM-dd HH:mm:ss}", ApplyFormatInEditMode = true)]
+        public DateTime SearchDate { get; set; }
     }
 }
 
