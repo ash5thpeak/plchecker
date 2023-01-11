@@ -16,7 +16,7 @@ using var loggerFactory = LoggerFactory.Create(logging =>
                                             | ActivityTrackingOptions.ParentId
                                             | ActivityTrackingOptions.Baggage
                                             | ActivityTrackingOptions.Tags;
-    })
+    }) 
     .AddSimpleConsole(options =>
     {
         options.ColorBehavior = Microsoft.Extensions.Logging.Console.LoggerColorBehavior.Disabled;
