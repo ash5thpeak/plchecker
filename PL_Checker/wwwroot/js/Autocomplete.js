@@ -7,16 +7,17 @@ $(document).ready(function () {
     $("#txtDrug").autocomplete({
         source: function (request, response) {
             $.ajax({
-                url: 'https://localhost:7296/api/drug/search',
+                url: 'https://localhost:7045/medicinefilter/pl/' + request.term ,
                 beforeSend: function (xhr) {
                     xhr.setRequestHeader("XSRF-TOKEN",
                         $('input:hidden[name="__RequestVerificationToken"]').val());
                 },
                 type: "GET",
-                data: { "searchTerm": request.term },
+                //data: { "plNumber": request.term },
                 dataType: "json",
                 position: { my: "left top", at: "left bottom" },
                 success: function (data) {
+                    console.log(data);
                     response($.map(data, function (item) {
                         return item;
                     }))
